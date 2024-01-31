@@ -18,7 +18,7 @@ app.use(json());
 app.use(
   cookieSession({
     signed: false, //we are not protecting cookie with certificate so adding parameter to make it not required
-    secure: process.env.NODE_ENV !== 'test', // when 'true' this allows cookie to be sent only with https, added condition so cookie setup can be tested in jest
+    secure: false, // process.env.NODE_ENV !== 'test', when 'true' this allows cookie to be sent only with https, added condition so cookie setup can be tested in jest
   })
 );
 app.use(currentUser);
