@@ -5,7 +5,7 @@ import { OrderCancelledListener } from './events/listeners/order-cancelled-liste
 import { OrderCreatedListener } from './events/listeners/order-created-listener';
 
 const start = async () => {
-  console.log('Starting payments service...');
+  console.log('Starting payments service..');
   if (!process.env.JWT_KEY) {
     // checking if env var is defined, otherwise we get error in signup.ts when providing variable to userJwt
     throw new Error('env var not defined');
