@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import { app } from './app';
 
 const start = async () => {
-  console.log('Starting up......');
+  console.log('Starting up.....');
   if (!process.env.JWT_KEY) {
     // checking if env var is defined, otherwise we get error in signup.ts when providing variable to userJwt
     throw new Error('env var not defined');
