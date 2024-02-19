@@ -1,4 +1,4 @@
-name: deploy-manifests
+name: deploy-ingress-manual
 
 on:
   workflow_dispatch:
